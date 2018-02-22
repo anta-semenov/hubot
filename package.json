@@ -5,7 +5,8 @@
   "author": "Anton Semenov <anta.semenov@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d scripts"
+    "build": "./node_modules/.bin/babel src -d scripts",
+    "start": "HUBOT_SLACK_TOKEN=xoxb-317566537702-ws4FgnKdD0h8dz3rBzDVw5K8 ./bin/hubot --adapter slack"
   },
   "dependencies": {
     "hubot": "^2.19.0",
