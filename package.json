@@ -6,7 +6,7 @@
   "description": "A simple helpful robot for your Company",
   "scripts": {
     "build": "./node_modules/.bin/babel src -d scripts",
-    "start": "./bin/hubot --adapter slack"
+    "start": "yarn build && ./bin/hubot --adapter slack"
   },
   "dependencies": {
     "hubot": "^2.19.0",
