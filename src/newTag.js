@@ -1,7 +1,5 @@
 import request from 'request'
 
-console.log('env', process.env.GIT_TOKEN)
-
 module.exports = (robot) => {
   robot.respond(/create new\s?(patch|minor|major)?\s?tag\s?(patch|minor|major)?/i, ({match, send}) => {
     const tag  = match[1] || match[2] || 'minor'
